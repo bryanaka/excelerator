@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Excel Converter</title>
+	<style>
+	#explain{
+		font-size:16px !important;
+		font-family:"Ariel" !important;
+	}
+	#explain h1{
+		font-size:2em !important;
+	}
+	#explain .steps {
+		font-size: 1em !important;
+	}
+	</style>
+</head>
+<body>
+	<div id="explain">
+		<center>
+			<h1>Welcome to The HTML Table to Excel Sheet Converter</h1>
+		</center>
+		<h2>Directions</h2>
+		<ol class="steps">
+			<li>Pick the file to upload. It will automatically process your file 
+				and give you a download link above.
+			</li>
+			<li>Right click the Download link and use save link as to save it.</li>
+			<li>Check for any weird anonamlies in the sheet and correct.</li>
+			<li>Warning! If you are using Internet Explorer, this may not work. If you are using Firefox, you may need to remove the .part file extension. Will be fixed in future versions. </li>
+		</ol>
+		<h2>Planned for future releases</h2>
+		<ol class="To-Do">
+			<li>
+				Allow any amount of columns, auto-detect how many and adapt for many kinds of tables
+			</li>
+			<li>Make More compatible with Mozilla Firefox</li>
+			<li>Ability to change names for files dynamically and separately</li>
+			<li>Far Future: allow many files to become one with multiple sheets</li>
+		</ol>
+	    <h2>Options</h2>
+		<label for="excelTitle">What Title would you like to use for the Excel Sheet (single file): </label>
+		<input type="text" id="excelTitle" name="excelTitle" placeholder="Default Title"><br>
+	    <label for="excelTitle">Or use a blanket prefix for multiple files: </label>
+		<input type="text" id="excelPrefix" name="excelPrefix" placeholder="Default Title Prefix"><br>
+		<h2 id="downloadHere"></h2>
+    
+	
+	<input type="file" id="files" name="files[]" multiple ><br>
+    </div>
+	<br>
+	<h2>Preview of what you uploaded</h2>
+	<output id="list"></output>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+</body>
+</html>
