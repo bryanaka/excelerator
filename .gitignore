@@ -1,1 +1,3 @@
-reports/.*
+reports/report*
+*.zip
+*.tar.gz
