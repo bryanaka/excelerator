@@ -1,5 +1,13 @@
-Welcome to The HTML Table to Excel Sheet Converter
-==================================================
+Excelerator - Convert an HTML Table to Excel
+============================================================
+
+Warning
+----------------
+This code is under rapid development, and is not stable. I suggest you fork this code if you want to use it.
+
+It is also not functioning on the ideal medium. It is starting as a fully front-end web app, but really should have a back-end component to it. However, making a backend would also require someone to maintain a server. so that isn't really an option to people lack that skill.
+
+So this medium is only working toward an app either using Brackets Shell or Node-webkit
 
 Getting Started
 ----------------

@@ -1,0 +1,19 @@
+{
+  "name": "excelerator",
+  "version": "0.0.0",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "jasmine": "~1.3.1",
+    "bootstrap": "~3.0",
+    "handlebars": "~1.0.0"
+  }
+}

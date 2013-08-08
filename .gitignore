@@ -1,3 +1,4 @@
 reports/report*
+assets/lib/*
 *.zip
 *.tar.gz

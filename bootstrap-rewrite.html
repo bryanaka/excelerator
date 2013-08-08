@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap 101 Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <style>
+    .drop-area{
+      position: relative;
+      margin-bottom: 30px;
+      font-size: 21px;
+      font-weight: 200;
+      line-height: 2.1428571435;
+      color: inherit;
+      background-color: #eee;
+      padding: 35px;
+      border-radius: 6px;
+    }
+    .drop-area__headers {
+      text-align: center;
+    }
+    .drop-area__files {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <hgroup class="col-lg-12 text-center">
+        <h1>Excelerator: The HTML to Excel Converter</h2>
+      </hgroup>
+    </div>
+
+    <div class="row">
+
+      <article class="directions col-lg-6">
+        <h2 class="directions__header">Directions</h2>
+        <ol class="directions__steps">
+          <li>
+            Pick the file to upload. It will automatically process your file and give you a download link above.
+          </li>
+          <li>Right click the Download link and use save link as to save it.</li>
+          <li>Check for any weird anonamlies in the sheet and correct.</li>
+          <li>
+            Warning! If you are using Internet Explorer, this may not work. If you are using Firefox, you may 
+            need to remove the .part file extension. Will be fixed in future versions.
+          </li>
+        </ol>
+      </article>
+
+      <article class="plans col-lg-6">
+        <h2 class="plans__header">Planned for future releases</h2>
+        <ol class="plans__list">
+          <li>
+            Allow any amount of columns, auto-detect how many and adapt for many kinds of tables
+          </li>
+          <li>Make More compatible with Mozilla Firefox</li>
+          <li>Ability to change names for files dynamically and separately</li>
+          <li>Far Future: allow many files to become one with multiple sheets</li>
+        </ol>
+      </article>
+
+    </div>
+
+    <div class="row">
+
+      <section class="col-lg-12">
+        <h2>Options</h2>
+        <label for="excelTitle">What Title would you like to use for the Excel Sheet (single file): </label>
+        <input type="text" id="excelTitle" name="excelTitle" placeholder="Default Title"><br>
+        <label for="excelTitle">Or use a blanket prefix for multiple files: </label>
+        <input type="text" id="excelPrefix" name="excelPrefix" placeholder="Default Title Prefix"><br>
+
+        <div id="drop-area" class="drop-area">
+
+          <hgroup class="drop-area__headers">
+            <h2>Drop Files Here</h2>
+            <h4>(or click to select files)</h4>
+          </hgroup>
+          <input type="file" id="drop-files" class="drop-area__files" name="files[]" multiple>
+
+        </div>
+      </section>
+
+    </div>
+    <div class="row">
+
+      <section class="col-lg-12">
+        <h2>Uploaded Files</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+  </div>
+
+  <div id="uploaded-output"></div>
+
+
+<!-- JavaScript plugins (requires jQuery) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/assets/lib/tabletojson/jquery.tabletojson.min.js"></script>
+<script src="/assets/lib/handlebars/handlebars.js"></script>
+<script src="/assets/js/excelerator.js"></script>
+</body>
+</html>
